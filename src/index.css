@@ -11,3 +11,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-link {
+  margin-left: 40px;
+}
+
+.footer-link {
+  font-size: 14px;
+  display: block;
+  color: #666666; /* muted grey */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #387ED1 !important; 
+}
+
+.ticket-link {
+  color: #387ED1;                 
+  text-decoration: none;       /* Underline hatao */
+  font-weight: 500;
+}
+
+.ticket-link:hover {
+  color: black;                /* Hover par black */
+  text-decoration: underline;  /* Optional: hover pe underline */
+}
