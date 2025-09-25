@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Navbar component for site navigation
 function Navbar() {
@@ -10,13 +11,13 @@ function Navbar() {
     >
       <div className="container p-2">
         {/* Logo and brand link */}
-        <a className="navbar-brand" href="/home">
+        <Link className="navbar-brand" to="/">
           <img
             src="media/images/logo.svg"
             alt="Logo"
             style={{ maxWidth: "140px", width: "100%", height: "auto" }}
           />
-        </a>
+        </Link>
         {/* Hamburger menu button for mobile view */}
         <button
           className="navbar-toggler"
@@ -34,33 +35,33 @@ function Navbar() {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {/* Signup link */}
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/home">
+              <Link className="nav-link active" aria-current="page" to="/signup">
                 Signup
-              </a>
+              </Link>
             </li>
-            {/* About button */}
+            {/* About link */}
             <li className="nav-item">
-              <button className="nav-link active btn btn-link" type="button">
+              <Link className="nav-link" to="/about">
                 About
-              </button>
+              </Link>
             </li>
-            {/* Product button */}
+            {/* Product link */}
             <li className="nav-item">
-              <button className="nav-link active btn btn-link" type="button">
+              <Link className="nav-link" to="/product">
                 Product
-              </button>
+              </Link>
             </li>
-            {/* Pricing button */}
+            {/* Pricing link */}
             <li className="nav-item">
-              <button className="nav-link active btn btn-link" type="button">
+              <Link className="nav-link" to="/pricing">
                 Pricing
-              </button>
+              </Link>
             </li>
-            {/* Support button */}
+            {/* Support link */}
             <li className="nav-item">
-              <button className="nav-link active btn btn-link" type="button">
+              <Link className="nav-link" to="/support">
                 Support
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
