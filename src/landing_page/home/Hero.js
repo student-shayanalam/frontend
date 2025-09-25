@@ -4,7 +4,7 @@ import React from "react";
 function Hero() {
   return (
     // Main container with padding on Y-axis (top & bottom)
-    <div className="container py-5 mt-5">
+    <div className="container py-5">
       <div className="row justify-content-center align-items-center text-center">
         <div className="col-12 col-md-10 col-lg-8">
           {/* Hero Image */}
