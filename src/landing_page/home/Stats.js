@@ -6,8 +6,10 @@ function Stats() {
       <div className="row align-items-center">
         {/* Left side - Text */}
         <div className="col-12 col-md-6 px-3 py-4">
-          <h1 className="fs-3 fs-md-2 mb-4 fw-semibold">Trust with confidence</h1>
-
+          <h1 className="fs-3 fs-md-2 mb-5 fw-semibold">
+            Trust with confidence
+          </h1>
+          
           <h2 className="fs-5 fs-md-4 mt-3">Customer-first always</h2>
           <p className="text-muted">
             That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores
@@ -23,14 +25,15 @@ function Stats() {
 
           <h2 className="fs-5 fs-md-4 mt-3">The Zerodha universe</h2>
           <p className="text-muted">
-            Not just an app, but a whole ecosystem. Our investments in 30+ fintech
-            startups offer you tailored services specific to your needs.
+            Not just an app, but a whole ecosystem. Our investments in 30+
+            fintech startups offer you tailored services specific to your needs.
           </p>
 
           <h2 className="fs-5 fs-md-4 mt-3">Do better with money</h2>
           <p className="text-muted">
-            With initiatives like Nudge and Kill Switch, we don't just facilitate
-            transactions, but actively help you do better with your money.
+            With initiatives like Nudge and Kill Switch, we don't just
+            facilitate transactions, but actively help you do better with your
+            money.
           </p>
         </div>
 
@@ -44,11 +47,17 @@ function Stats() {
           />
 
           <div className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
-            <a href="/products" className="text-decoration-none text-primary fw-medium">
+            <a
+              href="/products"
+              className="text-decoration-none text-primary fw-medium"
+            >
               Explore our products
               <i className="fa fa-long-arrow-right ms-2" aria-hidden="true"></i>
             </a>
-            <a href="/kite-demo" className="text-decoration-none text-primary fw-medium">
+            <a
+              href="/kite-demo"
+              className="text-decoration-none text-primary fw-medium"
+            >
               Try Kite Demo
               <i className="fa fa-long-arrow-right ms-2" aria-hidden="true"></i>
             </a>
