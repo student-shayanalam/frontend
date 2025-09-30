@@ -18,7 +18,7 @@ function LeftSection({
         </div>
 
         {/* Text Section */}
-        <div className="col-12 col-md-6 p-3 p-md-5 ">
+        <div className="col-12 col-md-6 p-3 p-md-5">
           <h1>{productName}</h1>
           <p>{productDescription}</p>
 
