@@ -29,7 +29,7 @@ function Universe() {
   ];
 
   return (
-    <div className="container mt-5 mb-5">
+    <div className="container mt-5 mb-5 p-3 p-md-5">
       <div className="text-center">
         <h1 className="fs-4">The Zerodha Universe</h1>
         <p className="text-muted mx-5 mt-3" style={{ fontSize: "16px" }}>
@@ -38,11 +38,11 @@ function Universe() {
         </p>
       </div>
 
-      <div className="row justify-content-center mt-4">
+      <div className="row justify-content-center mt-4 p-5">
         {platforms.map((item, index) => (
           <div key={index} className="col-12 col-md-4 p-4 text-center">
             <img src={item.img} alt="logo" style={{ width: "150px" }} />
-            <p className="text-muted mt-3">{item.text}</p>
+            <p className="text-muted mt-3 fs-6">{item.text}</p>
           </div>
         ))}
       </div>
