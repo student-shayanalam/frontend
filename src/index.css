@@ -20,7 +20,7 @@ code {
 .footer-link {
   font-size: 14px;
   display: block;
-  color: #666666; /* muted grey */
+  color: #666666;
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -31,11 +31,11 @@ code {
 
 .ticket-link {
   color: #387ED1;                 
-  text-decoration: none;       /* Underline hatao */
+  text-decoration: none;
   font-weight: 500;
 }
 
 .ticket-link:hover {
-  color: black;                /* Hover par black */
-  text-decoration: underline;  /* Optional: hover pe underline */
+  color: black;
+  text-decoration: underline;
 }
