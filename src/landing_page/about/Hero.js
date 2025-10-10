@@ -3,20 +3,20 @@ import React from "react";
 function Hero() {
   return (
     <div className="container">
-      <div className="row p-5 mt-5 mb-5">
-        <h4 className="text-center">
+      <div className="row p-3 p-md-5 mt-3 mt-md-5 mb-3 mb-md-5">
+        <h4 className="text-center fs-6 fs-md-5">
           We pioneered the discount broking model in India.
-          <br />
+          <br className="d-none d-md-block" />
           Now, we are breaking ground with our technology.
         </h4>
       </div>
 
       <div
-        className="row p-5 mt-5 border-top text-muted"
+        className="row p-3 p-md-5 mt-3 mt-md-5 border-top text-muted"
         style={{ lineHeight: "1.6", fontSize: "1.1em" }}
       >
-        <div className="col-6 p-5">
-          <p>
+        <div className="col-12 col-md-6 p-3 p-md-5">
+          <div>
             <p>
               We kick-started operations on the 15th of August, 2010 with the
               goal of breaking all barriers that traders and investors face in
@@ -33,10 +33,10 @@ function Hero() {
               through our powerful ecosystem of investment platforms,
               contributing over 15% of all Indian retail trading volumes.
             </p>
-          </p>
+          </div>
         </div>
-        <div className="col-6 p-5">
-          <p>
+        <div className="col-12 col-md-6 p-3 p-md-5">
+          <div>
             <p>
               In addition, we run a number of popular open online educational
               and community initiatives to empower retail traders and investors.
@@ -54,7 +54,7 @@ function Hero() {
               about us or learn more about our business and product
               philosophies.
             </p>
-          </p>
+          </div>
         </div>
       </div>
     </div>
