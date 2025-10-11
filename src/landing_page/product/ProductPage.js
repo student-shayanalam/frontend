@@ -28,6 +28,8 @@ function ProductPage() {
         imageURL="media/images/coin.png"
         productName="Coin"
         productDescription="Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices."
+        tryDemo=""
+        learnMore=""
         googlePlay=""
         appStore=""
         coin=""
