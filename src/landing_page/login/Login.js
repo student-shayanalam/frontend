@@ -1,32 +1,25 @@
 import { useState } from "react";
 import axios from "axios";
-import "./Signup.css"; // optional, agar style karna ho
+import "./Login.css"; // optional
 
-function Signup() {
-  const [form, setForm] = useState({ name: "", email: "", password: "" });
+function Login() {
+  const [form, setForm] = useState({ email: "", password: "" });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", form);
+      const res = await axios.post("http://localhost:5000/api/auth/login", form);
       alert(res.data.message);
-      setForm({ name: "", email: "", password: "" });
+      localStorage.setItem("token", res.data.token);
     } catch (err) {
-      alert(err.response?.data?.message || "Something went wrong");
+      alert(err.response?.data?.message || "Invalid credentials");
     }
   };
 
   return (
-    <div className="signup-container">
-      <h2>Create Account</h2>
+    <div className="login-container">
+      <h2>Login to your account</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Name"
-          value={form.name}
-          onChange={(e) => setForm({ ...form, name: e.target.value })}
-          required
-        />
         <input
           type="email"
           placeholder="Email"
@@ -41,10 +34,10 @@ function Signup() {
           onChange={(e) => setForm({ ...form, password: e.target.value })}
           required
         />
-        <button type="submit">Signup</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 }
 
-export default Signup;
+export default Login;
