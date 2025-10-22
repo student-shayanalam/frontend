@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import "./Signup.css"; // optional, agar style karna ho
+import "./Signup.css";
 
 function Signup() {
   const [form, setForm] = useState({ name: "", email: "", password: "" });
