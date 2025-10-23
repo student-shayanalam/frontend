@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Hero section component
 function Hero() {
@@ -29,13 +30,14 @@ function Hero() {
             ETFs, bonds, and more.
           </p>
 
-          {/* Call-to-Action Button */}
-          <button
+          {/* Call-to-Action Link */}
+          <Link
+            to="/signup"
             className="btn btn-primary fs-5 px-4 py-2 mb-4"
-            style={{ minWidth: "180px" , backgroundColor: "#387ED1" }}
+            style={{ minWidth: "180px", backgroundColor: "#387ED1", textDecoration: "none" }}
           >
             Sign up for free
-          </button>
+          </Link>
         </div>
       </div>
     </div>

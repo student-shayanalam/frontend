@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 // Navbar component for site navigation
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => setIsOpen(!isOpen);
+  const handleClose = () => setIsOpen(false);
+
   return (
     // Main navbar container with Bootstrap classes for responsiveness and border
     <nav
@@ -22,20 +27,27 @@ function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
+          onClick={handleToggle}
           aria-controls="navbarSupportedContent"
-          aria-expanded="false"
+          aria-expanded={isOpen ? "true" : "false"}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        {/* Collapsible navigation links */}
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+
+        {/* Collapse Section */}
+        <div
+          className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             {/* Signup link */}
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/signup">
+              <Link
+                className="nav-link active"
+                to="/signup"
+                onClick={handleClose}
+              >
                 Signup
               </Link>
             </li>
@@ -55,19 +67,19 @@ function Navbar() {
             </li>
             {/* Product link */}
             <li className="nav-item">
-              <Link className="nav-link" to="/product">
+              <Link className="nav-link" to="/product" onClick={handleClose}>
                 Product
               </Link>
             </li>
             {/* Pricing link */}
             <li className="nav-item">
-              <Link className="nav-link" to="/pricing">
+              <Link className="nav-link" to="/pricing" onClick={handleClose}>
                 Pricing
               </Link>
             </li>
             {/* Support link */}
             <li className="nav-item">
-              <Link className="nav-link" to="/support">
+              <Link className="nav-link" to="/support" onClick={handleClose}>
                 Support
               </Link>
             </li>

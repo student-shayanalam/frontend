@@ -22,19 +22,22 @@ function Team() {
           <h6 className="fs-6 fs-md-5">Frontend Developer</h6>
         </div>
 
-        <div className="col-12 col-md-6 p-3 p-md-4" style={{ fontSize: "0.9em" }}>
+        <div
+          className="col-12 col-md-6 p-3 p-md-4"
+          style={{ fontSize: "0.9em" }}
+        >
           <p>
             Shayan is a Frontend Developer from Korba, Chhattisgarh, currently
-            working and learning in a small IT company. He has mastered the basics
-            of HTML, CSS, JavaScript, React.js, and Git/GitHub, and is now
-            exploring Node.js, Express, and the MERN stack.
+            working and learning in a small IT company. He has mastered the
+            basics of HTML, CSS, JavaScript, React.js, and Git/GitHub, and is
+            now exploring Node.js, Express, and the MERN stack.
           </p>
 
           <p>
-            With a strong foundation in mathematics and a problem-solving mindset,
-            Shayan has built and deployed multiple learning projects including a
-            Weather App, a Zerodha clone, a Zoom-like WebRTC project, and a
-            ChatGPT integration using OpenAI APIs.
+            With a strong foundation in mathematics and a problem-solving
+            mindset, Shayan has built and deployed multiple learning projects
+            including a Weather App, a Zerodha clone, a Zoom-like WebRTC
+            project, and a ChatGPT integration using OpenAI APIs.
           </p>
 
           <p>
@@ -45,14 +48,27 @@ function Team() {
           </p>
 
           <p>
-            When not coding, Shayan enjoys teaching mathematics and exploring new
-            ideas to make school management easier through automation.
+            When not coding, Shayan enjoys teaching mathematics and exploring
+            new ideas to make school management easier through automation.
           </p>
 
           <p>
-            Connect on{" "}
-            <a href="#">Homepage</a> / <a href="#">LinkedIn</a> /{" "}
-            <a href="#">GitHub</a>
+            Connect on <a href="/">Homepage</a> /{" "}
+            <a
+              href="https://www.linkedin.com/in/shayan-alam-60048a34a/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>{" "}
+            /{" "}
+            <a
+              href="https://github.com/student-shayanalam"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
           </p>
         </div>
       </div>
